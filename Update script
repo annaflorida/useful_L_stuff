@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#Shamelessly mostly taken from Chris Truncer vs (insert name).
+#Does standard Linux updates/upgrades
+#Can include sections that need customization to specific system, ex. enter username
+
+apt install update
+
+apt install upgrade
+
