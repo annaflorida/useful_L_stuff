@@ -4,7 +4,14 @@
 #Does standard Linux updates/upgrades
 #Can include sections that need customization to specific system, ex. enter username
 
-apt install update
+apt update
 
-apt install upgrade
+apt upgrade -y
+
+apt full-upgrade -y
+
+apt --purge autoremove -y
+
+apt clean
+apt autoclean
 
