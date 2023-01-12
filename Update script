@@ -1,6 +1,7 @@
 #!/bin/bash
 
-#Shamelessly mostly taken from Chris Truncer vs (insert name).
+#work in progress
+#Shamelessly adapted from Chris Truncer via TheMightyShiv
 #Does standard Linux updates/upgrades
 #Can include sections that need customization to specific system, ex. enter username
 
@@ -10,8 +11,15 @@ apt upgrade -y
 
 apt full-upgrade -y
 
+#Improvements possible below, check if syntax for line 15 correct
 apt --purge autoremove -y
+
+#For debugging use and grep with: -s (simulation), -u (shows upgrades), -V (verbose)
+
 
 apt clean
 apt autoclean
 
+
+date=$(date)
+echo "Finished updating/upgrading at 
